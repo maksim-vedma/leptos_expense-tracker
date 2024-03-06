@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body,
+  [data-theme="default"] {
+    --clr-accent: blue;
+    --clr-text: black;
+    --clr-bg: #aaa;
+    --clr-success: green;
+    --clr-danger: red;
+  }
+
+  [data-theme="dark"] {
+    --clr-accent: teal;
+    --clr-text: white;
+    --clr-bg: #222;
+    --clr-success: orange;
+    --clr-danger: purple;
+  }
+}

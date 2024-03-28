@@ -1,5 +1,5 @@
-use crate::components::transaction_item::*;
-use crate::Transaction;
+use crate::expense_tracker::expense_tracker::Transaction;
+use crate::expense_tracker::transaction_item::*;
 use leptos::*;
 
 #[component]

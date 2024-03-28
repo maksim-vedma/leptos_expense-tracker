@@ -1,5 +1,5 @@
-use crate::components::button::{Button, ButtonColor, ButtonSize, ButtonVariant};
-use leptos::{leptos_dom::logging::console_log, *};
+use crate::components::button::*;
+use leptos::*;
 use web_sys::SubmitEvent;
 
 #[component]

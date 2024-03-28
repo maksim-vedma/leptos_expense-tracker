@@ -14,7 +14,7 @@ pub fn IncomeExpense(
 
             <div class="shadow p-4">
                 <p>Expense</p>
-                <em class="text-red-400">"-$" {expense}</em>
+                <em class="text-red-400">"$" {expense}</em>
             </div>
         </section>
     }

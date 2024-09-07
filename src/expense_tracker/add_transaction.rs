@@ -48,8 +48,8 @@ where
                     id="transaction_amount"
                     class="w-full px-4 py-2"
                     placeholder="Montant"
-                    prop:value=move|| amount.get().unwrap()
-                    value=move|| amount.get().unwrap()
+                    prop:value=move || amount.get().unwrap()
+                    value=move || amount.get().unwrap()
                     on:input=move |ev| { set_amount.set(event_target_value(&ev).parse::<f32>()) }
                 />
             </div>
@@ -59,4 +59,3 @@ where
         </form>
     }
 }
-

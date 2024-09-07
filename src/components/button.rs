@@ -86,7 +86,7 @@ const BTN_STYLE: &str =
 
 #[component]
 pub fn Button(
-    #[prop(into)] label: String,
+    #[prop(into)] label: MaybeSignal<String>,
     #[prop(optional)] variant: ButtonVariant,
     #[prop(optional)] color: ButtonColor,
     #[prop(optional)] size: ButtonSize,
@@ -107,4 +107,3 @@ pub fn Button(
         </button>
     }
 }
-

@@ -15,13 +15,14 @@ pub fn TransactionItem(#[prop()] transaction: Transaction) -> impl IntoView {
 
     view! {
         <li
-        class="group flex gap-2 p-4 border-r-2 shadow"
-        class=("border-green-600", transaction.is_income())
-        class=("border-red-600", transaction.is_expense())
+            class="group flex gap-2 p-4 border-r-2 shadow"
+            class=("border-green-600", transaction.is_income())
+            class=("border-red-600", transaction.is_expense())
         >
-            <button class="h-8 w-8 text-red-500 bg-neutral-800 opacity-0 -translate-x-1 transition-all group-hover:opacity-100 group-hover:translate-x-0"
-                on:click=move|_|remove_transaction(transaction.id)
-        >
+            <button
+                class="h-8 w-8 text-red-500 bg-neutral-800 opacity-0 -translate-x-1 transition-all group-hover:opacity-100 group-hover:translate-x-0"
+                on:click=move |_| remove_transaction(transaction.id)
+            >
                 X
             </button>
             <p class="flex-1">{transaction.text}</p>
